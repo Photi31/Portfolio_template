@@ -1,0 +1,64 @@
+.experience {
+    min-height: 600px;
+    width: 990px;
+    margin: 0 auto;
+    margin-top: 120px;
+    &__title {
+        text-align: center;
+        margin: 0;
+    }
+    
+    &__wrapper {
+        position: relative;
+        padding-left: 45px;
+        border-left: 1px solid #000;
+      
+    }
+    &__grid {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 380px);
+        justify-content: space-between;
+        align-items: start;
+        .block {
+            margin-top: 45px;
+            display: flex;
+            flex-direction: column;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            &__header {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                @include block_line;
+            }
+            &_img {
+                position: absolute;
+                top: 6px;
+                left: 10px;
+                @include before_circule;
+                img {
+                    position: relative;
+                    left: 5px;
+                    top: 7px;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            &_titles {
+                display: flex;
+                flex-direction: column;
+                margin-left: 50px;
+            }
+            &__title {
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 21px;
+            }
+            &__desc {
+                margin-top: 12px;
+            }
+        }
+    }
+}

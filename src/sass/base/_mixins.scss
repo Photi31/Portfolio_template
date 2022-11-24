@@ -1,0 +1,49 @@
+@mixin before_circule {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: $main-color;
+        left: -10px;
+        top: -25%;
+        z-index: -1;
+    }    
+}
+
+@mixin block_circule {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: $main-color;
+        z-index: 2;
+        top: 7px;
+        left: -53px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background: #fff;
+        z-index: 1;
+        top: -5px;
+        left: -57px;
+    }
+}
+
+@mixin block_line {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 45px;
+        height: 1px;
+        background: #000;
+        top: 17px;
+        left: -45px;
+    }    
+}

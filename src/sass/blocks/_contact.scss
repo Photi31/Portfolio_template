@@ -1,0 +1,30 @@
+.contact {
+    margin-top: 120px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        img {
+            margin-left: 50px;
+        }
+    }
+    &__wrap {
+        margin-left: 70px;
+    }
+    &__subtitle {
+        position: relative;
+        @include before_circule;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        margin: 0;
+    }
+    &__social {
+        margin-top: 20px;
+        
+    }
+    &__form {
+        margin-top: 20px;
+    }
+}
