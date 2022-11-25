@@ -40,3 +40,20 @@
         }
     }
 }
+
+@media (max-width: 320px) {
+    .title {
+        &_fz24 {
+            font-size: 24px;
+            line-height: 36px;
+            margin-top: 20px;
+        }
+        &_fz48 {
+            font-size: 26px;
+            line-height: 39px;
+        }
+        &__line {
+            margin-top: 20px;
+        }
+    }
+}

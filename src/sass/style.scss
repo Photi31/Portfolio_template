@@ -23,11 +23,18 @@
     padding: 0;
 }
 
-body {
-    position: relative;
-}
-
 .container {
     width: 1140px;
     margin: 0 auto;
 }
+
+@media (max-width: 320px) {
+    .container {
+        width: 320px;
+        padding: 10px;
+    }
+}
+
+// @media (max-width: 320px) {
+    
+// }

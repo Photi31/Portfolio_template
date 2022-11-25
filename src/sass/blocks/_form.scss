@@ -41,7 +41,53 @@
         top: -9px;
         left: 12px;
     }
-    button {
+    &__btns {
+        display: flex;
+        flex-direction: row;
         margin-top: 20px;
+        align-items: center;
+        button {
+            margin-right: 35px;
+        }
+    }
+    &__policy {
+        font-size: 12px;
+        line-height: 18px;
+        input {
+            width: 11px;
+            height: 11px;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .form {
+        &__input {
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: 45px 45px 140px;
+            gap: 20px;
+        }
+        &__block {
+            &_big {
+                grid-column: 1/2;
+            }
+            input {
+                padding: 10px;
+            }
+            textarea {
+                padding: 10px;
+            }
+        }
+        &__btns {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 10px;
+            align-items: center;
+            button {
+                margin: 10px 0;
+            }
+        }
     }
 }

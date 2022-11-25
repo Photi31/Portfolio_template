@@ -33,3 +33,9 @@
         }
     }
 }
+
+@media (max-width: 320px) {
+    .sidepanel {
+        display: none;
+    }
+}

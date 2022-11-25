@@ -1,5 +1,5 @@
 .contact {
-    margin-top: 120px;
+    margin: 120px 0 60px 0;
     &__wrapper {
         display: flex;
         flex-direction: row;
@@ -9,6 +9,7 @@
     }
     &__wrap {
         margin-left: 70px;
+        width: 585px;
     }
     &__subtitle {
         position: relative;
@@ -21,10 +22,22 @@
         margin: 0;
     }
     &__social {
-        margin-top: 20px;
-        
+        margin-top: 20px;        
     }
-    &__form {
-        margin-top: 20px;
+}
+
+@media (max-width: 320px) {
+    .contact {
+        margin: 40px 0 10px 0;
+        &__wrapper {
+            flex-direction: column;
+            img {
+                display: none;
+            }
+        }
+        &__wrap {
+            margin: 0;
+            width: 300px;
+        }
     }
 }
